@@ -1,0 +1,38 @@
+=== INICIO DE EJECUCIÃ“N === 
+Fecha: lun 11/05/2026  9:53:21,43 
+ 
+============================================================
+=== AUTOMATIZACIÓN DE LEADS ===
+Fecha: 2026-05-11 09:53:22
+
+1. Buscando leads con tareas PENDIENTES...
+   Encontrados: 0
+
+2. Buscando tareas CADUCADAS...
+   Leads con tareas caducadas: 33
+
+3. Procesando leads pendientes...
+
+4. Procesando leads caducados...
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Natalia Castro\desarrollo\TaskDaily\main.py", line 698, in main
+    print(f"   \u26a0\ufe0f Lead {lead_id} no encontrado")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 3-4: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Natalia Castro\desarrollo\TaskDaily\main.py", line 771, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\PC\Desktop\Natalia Castro\desarrollo\TaskDaily\main.py", line 734, in main
+    print(f"   \u274c Error procesando lead caducado {lead_id}: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 3: character maps to <undefined>

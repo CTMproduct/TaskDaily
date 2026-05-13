@@ -1,0 +1,24 @@
+=== INICIO DE EJECUCIÃ“N === 
+Fecha: mi‚ 06/05/2026 13:59:20,28 
+ 
+============================================================
+=== AUTOMATIZACIÓN DE LEADS ===
+Fecha: 2026-05-06 13:59:29
+
+1. Buscando leads con tareas PENDIENTES...
+   Encontrados: 4
+
+2. Buscando tareas CADUCADAS...
+
+3. Procesando leads pendientes...
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Natalia Castro\desarrollo\TaskDaily\main.py", line 587, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\PC\Desktop\Natalia Castro\desarrollo\TaskDaily\main.py", line 531, in main
+    print(f"   \U0001f4cc {lead.get('name', 'Sin nombre')[:35]} -> {asesor}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4cc' in position 3: character maps to <undefined>

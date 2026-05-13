@@ -1,0 +1,17 @@
+=== INICIO DE EJECUCIÃ“N === 
+Fecha: jue 30/04/2026  9:00:02,12 
+ 
+============================================================
+=== INICIANDO AUTOMATIZACIÓN DE LEADS ===
+Fecha/Hora: 2026-04-30 09:00:07
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Natalia Castro\desarrollo\TaskDaily\main.py", line 345, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\PC\Desktop\Natalia Castro\desarrollo\TaskDaily\main.py", line 296, in main
+    print(f"\n\U0001f4ca Total leads encontrados: {len(leads)}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4ca' in position 2: character maps to <undefined>

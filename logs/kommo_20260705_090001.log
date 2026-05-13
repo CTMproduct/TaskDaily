@@ -1,0 +1,25 @@
+=== INICIO DE EJECUCIÃ“N === 
+Fecha: jue 07/05/2026  9:00:01,80 
+ 
+============================================================
+=== AUTOMATIZACIÓN DE LEADS ===
+Fecha: 2026-05-07 09:00:06
+
+1. Buscando leads con tareas PENDIENTES...
+   Encontrados: 7
+
+2. Buscando tareas CADUCADAS...
+
+3. Procesando leads pendientes...
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Natalia Castro\desarrollo\TaskDaily\main.py", line 587, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\PC\Desktop\Natalia Castro\desarrollo\TaskDaily\main.py", line 523, in main
+    asesor = get_asesor_from_contact(contact)
+  File "C:\Users\PC\Desktop\Natalia Castro\desarrollo\TaskDaily\main.py", line 169, in get_asesor_from_contact
+    asesor = get_custom_field_by_id(contact, 801430)
+  File "C:\Users\PC\Desktop\Natalia Castro\desarrollo\TaskDaily\main.py", line 161, in get_custom_field_by_id
+    for field in data.get("custom_fields_values", []):
+                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
