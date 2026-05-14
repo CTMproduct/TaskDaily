@@ -1,34 +1,40 @@
 @echo off
+title AUTOMATIZACIÓN KOMMO - Leads con tareas
+color 0A
+
+:: Definir la ruta completa
+set SCRIPT_DIR=C:\Users\PC\Desktop\Natalia Castro\desarrollo\TaskDaily
+set SCRIPT_PATH=%SCRIPT_DIR%\main.py
+
 echo ========================================
-echo DIAGNÓSTICO DEL SISTEMA
+echo   AUTOMATIZACIÓN DE LEADS KOMMO
+echo   Fecha: %date% %time%
 echo ========================================
 echo.
-echo 1. Directorio actual:
-cd
-echo.
-echo 2. Archivos en el directorio:
-dir *.py
-echo.
-echo 3. Versión de Python:
-python --version
-echo.
-echo 4. Ruta de Python:
-where python
-echo.
-echo 5. Probando import requests:
-python -c "import requests; print('✅ requests OK')"
-echo.
-echo 6. Probando import pytz:
-python -c "import pytz; print('✅ pytz OK')"
-echo.
-echo 7. Probando ejecución de main.py:
-python main.py --help 2>nul
-if errorlevel 1 (
-    echo ❌ main.py no se puede ejecutar
-) else (
-    echo ✅ main.py responde
+
+:: Verificar que el script existe
+if not exist "%SCRIPT_PATH%" (
+    echo ❌ ERROR: No se encuentra main.py
+    echo Ruta buscada: %SCRIPT_PATH%
+    echo.
+    echo Verifica que el archivo exista en:
+    echo %SCRIPT_DIR%
+    pause
+    exit /b 1
 )
+
+:: Ejecutar el script directamente con ruta completa
+echo Ejecutando: python "%SCRIPT_PATH%"
 echo.
-echo ========================================
-echo Diagnóstico completado
+python "%SCRIPT_PATH%"
+
+if errorlevel 1 (
+    echo.
+    echo ❌ ERROR - El script falló
+) else (
+    echo.
+    echo ✅ COMPLETADO EXITOSAMENTE
+)
+
+echo.
 pause
