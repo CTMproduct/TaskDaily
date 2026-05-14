@@ -1,0 +1,36 @@
+=== INICIO DE EJECUCIÃ“N === 
+Fecha: mi‚ 13/05/2026  9:00:03,39 
+ 
+============================================================
+=== AUTOMATIZACIÓN DE LEADS ===
+Fecha: 2026-05-13 09:00:15
+
+1. Buscando leads con tareas PENDIENTES...
+   Encontrados: 4
+
+2. Buscando tareas CADUCADAS...
+   Leads con tareas caducadas: 33
+
+3. Procesando leads pendientes...
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Natalia Castro\desarrollo\TaskDaily\main.py", line 690, in main
+    print(f"   \U0001f4cc {lead.get('name', 'Sin nombre')[:35]} -> {asesor}" + (" (sin contacto)" if not tiene_contacto else " (sin asesor en contacto)" if not tiene_asesor_contacto else ""))
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4cc' in position 3: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Natalia Castro\desarrollo\TaskDaily\main.py", line 774, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\PC\Desktop\Natalia Castro\desarrollo\TaskDaily\main.py", line 692, in main
+    print(f"   \u274c Error procesando lead pendiente: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 3: character maps to <undefined>
