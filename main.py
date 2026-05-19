@@ -27,6 +27,7 @@ ASESOR_EMAILS = {
     "Paula Orjuela": "asesor2@ctmenlinea.com.co",
     "Paola Cabrejo": "Jefe.operaciones@ctmenlinea.com.co",
     "Andres Rodriguez": "producto@ctmenlinea.com.co",
+    "Daniela Torrado": "operaciones@ctmenlinea.com.co",
     "Gloria Caicedo": "Asesor2@ctmenlinea.com.co",
     "Mabel Hernandez": "gerencia@ctmenlinea.com.co",
     "No asignado": "keyaccountmanager@ctmenlinea.com.co",
